@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+backend/venv/
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+backend/instance/
+
+# Uploaded images
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
