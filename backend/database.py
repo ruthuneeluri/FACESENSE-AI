@@ -5,6 +5,7 @@ db = SQLAlchemy()
 
 class AnalysisHistory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.String(100), nullable=False, index=True, default="default")
     image_path = db.Column(db.String(500), nullable=False)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
     faces_detected = db.Column(db.Integer, default=0)
